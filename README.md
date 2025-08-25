@@ -1,6 +1,6 @@
-# AgentPro
+# IntelliFlow
 
-AgentPro is a flexible framework for building AI agents with multiple specialized tools. This repository allows you to create powerful agents that can search the internet, generate code, analyze YouTube videos, create presentations, and more.
+IntelliFlow is a flexible framework for building AI agents with multiple specialized tools. This repository allows you to create powerful agents that can search the internet, generate code, analyze YouTube videos, create presentations, and more.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python 3.8+">
@@ -23,8 +23,8 @@ AgentPro is a flexible framework for building AI agents with multiple specialize
 Clone the repository and install the required packages:
 
 ```bash
-git clone https://github.com/traversaal-ai/AgentPro.git
-cd AgentPro
+git clone https://github.com/SAMK-online/IntelliFlow.git
+cd IntelliFlow
 pip install -r requirements.txt
 ```
 
@@ -63,56 +63,10 @@ agent = AgentPro(tools=[ares_tool, code_tool, youtube_tool])
 response = agent("Generate a summary on the latest AI advancements")
 print(response)
 ```
-You can also use the [Quick Start](https://github.com/traversaal-ai/AgentPro/blob/main/agentpro/examples/Quick_Start.ipynb) Jupyter Notebook to run AgentPro directly in Colab.
-
-## 🌍 Traversaal x Optimized AI Hackathon 2025
-
-We’re teaming up with the **Optimized AI Conference 2025** to host a **global hackathon on AI Agents** — open to all developers, builders, researchers, and dreamers working on intelligent systems.
-
-### The Challenge
-
-**Build a real, functional AI Agent** that solves a real-world problem.
-
-This isn’t about flashy demos. We want to see domain-specific, usable, vertical agents — like:
-- 🧑‍💼 Customer Support Agents
-- 🔬 Research Assistants
-- 📊 Data Analyst Agents
-- 💡 Or something totally original
-
-You can use any framework, but we recommend trying **[AgentPro](https://github.com/Traversaal/AgentPro)** — our open-source toolkit designed for rapid prototyping and robust architecture.
-
-### Key Dates
-
-- **Hackathon Starts:** April 9, 2025  
-- **Submission Deadline:** April 15, 2025  
-- **Winners Announced:** April 15, 2025 (Live @ Optimized AI Conference)
-
-### Prizes + Recognition
-
-| Prize Tier         | Reward     |
-|--------------------|------------|
-| 🥇 Grand Prize      | $1,000     |
-| 🥈 Runner-Up        | $500     |
-| 🥉 Honorable Mention x2 | $250       |
-
-Plus:
-- 1:1 **Mentorship opportunities**
-- Invitation to **Traversaal’s AI Fellowship Program**
-
-### Want to be a Judge?
-We’re looking for global experts in AI, product, UX, and enterprise applications to help evaluate the submissions. 👉 [Apply to be a Judge](https://forms.gle/zpC4GbEjAkD1osY68)
-
-For more details, follow this [link](https://hackathon.traversaal.ai/)
-
-📩 Questions? Reach us at [hackathon-oai@traversaal.ai](hackathon-oai@traversaal.ai)
-
-
-## Data Science Agent
-https://github.com/user-attachments/assets/aeeb91e4-134e-4a14-bbc4-2523ba236c56
-
+You can also use the Quick Start Jupyter Notebook to run IntelliFlow directly in Colab.
 
 ## Tools Overview
-The AgentPro toolkit comes with a variety of default tasks, such as:
+The IntelliFlow toolkit comes with a variety of default tasks, such as:
 
 - **Internet Research**: "What are the latest developments in quantum computing?"
 - **Code Generation**: "Create a Python script to analyze stock prices and generate a chart"
@@ -206,8 +160,8 @@ agent = AgentPro(tools=[custom_tool, ares_tool, code_tool])
 ## Project Structure
 
 ```
-agentpro/
-├── agentpro/
+IntelliFlow/
+├── agentpro/                 # Core framework
 │   ├── __init__.py
 │   ├── agent.py              # Main agent implementation
 │   ├── tools/
@@ -216,13 +170,20 @@ agentpro/
 │   │   ├── ares_tool.py      # Internet search
 │   │   ├── code_tool.py      # Code generation
 │   │   ├── youtube_tool.py   # YouTube analysis
-│   │   └── slide_tool.py     # Presentation generation (**Work in progress**)
+│   │   ├── slide_tool.py     # Presentation generation
+│   │   └── data_tool.py      # Data analysis
 │   └── examples/
 │       ├── __init__.py
 │       └── example_usage.py  # Usage examples
+├── ariel_view/               # Advanced analysis platform
+│   ├── ariel_agent.py        # Enhanced agent for topic analysis
+│   ├── backend/              # Flask API server
+│   ├── frontend/             # React TypeScript UI
+│   └── tools/                # Enhanced tools (Perplexity, YouTube)
 ├── main.py                   # CLI entry point
 ├── requirements.txt          # Dependencies
-└── .env                      # API keys (create this file)
+├── SECURITY.md              # Security guidelines
+└── .env.example             # Environment template
 ```
 
 ## Requirements
