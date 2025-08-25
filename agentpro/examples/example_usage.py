@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from agentpro import AgentPro
 from agentpro.tools import AresInternetTool, CodeEngine, YouTubeSearchTool, SlideGenerationTool
 import os

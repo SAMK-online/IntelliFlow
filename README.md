@@ -231,6 +231,10 @@ agentpro/
 - OpenAI API key
 - Traversaal Ares API key (for internet search)
 
+## Security
+
+IntelliFlow follows security best practices. See [SECURITY.md](SECURITY.md) for detailed security information and guidelines.
+
 ## License
 
 This project is licensed under the Apache 2.0 License - see the LICENSE file for more details.
